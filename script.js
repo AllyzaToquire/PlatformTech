@@ -1,11 +1,19 @@
+// Declare an array of choices for the game (rock, paper, scissors)
 var choices = ["paper", "rock", "scissors"];
+
+// Generate a random number between 0 and 2 and use it to select a random item from the choices array
 var i = Math.floor(Math.random() * 3);
 var ComChoice = choices[i];
+
+// Initialize the scores for the user and the computer to 0
 var UserPoints = 0;
 var ComPoints = 0;
+
+// Function to display the current score in the HTML element with the id "score"
 function score(){
-	var score_div = document.getElementById("score").innerHTML = UserPoints + " - " + ComPoints;
+  var score_div = document.getElementById("score").innerHTML = UserPoints + " - " + ComPoints;
 }
+
 setInterval(score, 50);
 function convert(word){
 	if(word === "paper") return '<i class="far fa-hand-paper"></i>';

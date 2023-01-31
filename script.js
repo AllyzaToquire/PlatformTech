@@ -44,7 +44,7 @@ function win(bn){
     setTimeout(() => {
     	bn.classList.add("bn");
         bn.classList.remove("green");
-    }, 1200);
+    }, 1500);
 }
 function draw(bn){
 	document.getElementById("who").innerHTML = "It's a Draw.";
@@ -54,7 +54,7 @@ function draw(bn){
     setTimeout(() => {
     	bn.classList.add("bn");
         bn.classList.remove("gray");
-    }, 1200);
+    }, 1500);
 }
 function lose(bn){
 	ComPoints++;
@@ -65,5 +65,5 @@ function lose(bn){
     setTimeout(() => {
     	bn.classList.add("bn");
         bn.classList.remove("red");
-    }, 1200);
+    }, 1500);
 }
